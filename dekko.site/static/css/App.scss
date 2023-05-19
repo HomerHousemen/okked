@@ -1,0 +1,28 @@
+@import "scss/header";
+@import "scss/loader";
+@import "scss/reportTables";
+@import "scss/report";
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 75px;
+  padding-bottom: 40px;
+}
+
+@media print {
+  @page {
+    size: landscape;
+  }
+
+  body {
+    font-size: 10px;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
+}
+
+.chonky-searchFieldContainer {
+  display: none !important;
+}

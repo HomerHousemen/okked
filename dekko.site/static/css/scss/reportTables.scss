@@ -1,0 +1,78 @@
+﻿@media screen {
+  .table-report-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .table-report-responsive > .table {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+  .table-report-responsive > .table > thead > tr > th {
+    position: sticky;
+    top: 0;
+  }
+
+  .table-report-responsive > .table > thead > tr > th,
+  .table-report-responsive > .table > tbody > tr > th,
+  .table-report-responsive > .table > tfoot > tr > th,
+  .table-report-responsive > .table > thead > tr > td {
+    text-align: center;
+    width: 150px;
+  }
+
+  .table-report-responsive > .table > tbody > tr > td,
+  .table-report-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+    width: 150px;
+  }
+  .table-report-responsive > .table > tbody > tr > td.table-total {
+    border-top-width: 3px;
+    border-top-color: black;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+    text-align: right;
+  }
+}
+
+@media print {
+  .table-report-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+  }
+
+  .table-report-responsive > .table {
+    margin-bottom: 0;
+    font-size: 11px;
+  }
+
+  .table-report-responsive > .table > thead > tr > th {
+    position: sticky;
+    top: 0;
+    border: 1px solid #ddd;
+  }
+
+  .table-report-responsive > .table > thead > tr > th,
+  .table-report-responsive > .table > tbody > tr > th,
+  .table-report-responsive > .table > tfoot > tr > th,
+  .table-report-responsive > .table > thead > tr > td {
+    text-align: center;
+  }
+
+  .table-report-responsive > .table > tbody > tr > td,
+  .table-report-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+
+  .table-report-responsive > .table > tbody > tr > td.table-total {
+    border-top-width: 3px;
+    border-top-color: black;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+    text-align: right;
+  }
+}
